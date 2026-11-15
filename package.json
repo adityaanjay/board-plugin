@@ -1,0 +1,37 @@
+{
+  "name": "board-plugin",
+  "version": "0.1.0",
+  "description": "Universal AI Hardware Programming & Debugging Plugin - Connect AI coding agents to microcontroller boards",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter='*' run build",
+    "dev": "pnpm --filter='*' run dev",
+    "test": "pnpm --filter='*' run test",
+    "test:watch": "pnpm --filter='*' run test:watch",
+    "lint": "pnpm --filter='*' run lint",
+    "lint:fix": "pnpm --filter='*' run lint:fix",
+    "typecheck": "pnpm --filter='*' run typecheck",
+    "format": "prettier --write \"**/*.{ts,json,md,yaml,yml}\"",
+    "prepare": "husky install",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.7",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.9.0",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.72.2",
+    "vitest": "^2.0.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.12.0"
+}

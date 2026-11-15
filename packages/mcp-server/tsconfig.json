@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./dist/.tsbuildinfo"
+  },
+  "include": ["src/**/*"],
+  "references": [
+    { "path": "../core-engine" },
+    { "path": "../board-database" },
+    { "path": "../hardware-detection" },
+    { "path": "../serial-comm" },
+    { "path": "../arduino-manager" },
+    { "path": "../esp-manager" },
+    { "path": "../platformio-manager" }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@board/hardware-detection",
+  "version": "0.1.0",
+  "description": "Hardware detection for Board Plugin - serial port scanning, VID/PID matching, board identification",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@board/board-database": "workspace:*",
+    "@board/core-engine": "workspace:*",
+    "eventemitter3": "^5.0.1",
+    "pino": "^9.3.2",
+    "serialport": "^13.0.0"
+  },
+  "devDependencies": {
+    "@serialport/binding-mock": "^10.2.2",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.9.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

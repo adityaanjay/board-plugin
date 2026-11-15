@@ -1,0 +1,351 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1794716274945,
+  "projectRoot": "/home/aditya/board",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=20.0.0",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vitest",
+        "version": "2.0.5",
+        "category": "testing"
+      }
+    ],
+    "packageManager": "pnpm",
+    "runtime": "Node.js 20.0.0"
+  },
+  "build": {
+    "buildCommand": "pnpm build",
+    "testCommand": "pnpm test",
+    "lintCommand": "pnpm lint",
+    "devCommand": "pnpm dev",
+    "scripts": {
+      "build": "pnpm --filter='*' run build",
+      "dev": "pnpm --filter='*' run dev",
+      "test": "pnpm --filter='*' run test",
+      "test:watch": "pnpm --filter='*' run test:watch",
+      "lint": "pnpm --filter='*' run lint",
+      "lint:fix": "pnpm --filter='*' run lint:fix",
+      "typecheck": "pnpm --filter='*' run typecheck",
+      "format": "prettier --write \"**/*.{ts,json,md,yaml,yml}\"",
+      "prepare": "husky install",
+      "changeset": "changeset",
+      "version": "changeset version",
+      "release": "pnpm build && changeset publish"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "examples",
+      "scripts",
+      "src",
+      "tests"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "apps": {
+      "path": "apps",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1794716274838,
+      "keyFiles": []
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1794716274841,
+      "keyFiles": []
+    },
+    "examples": {
+      "path": "examples",
+      "purpose": "Example code",
+      "fileCount": 0,
+      "lastAccessed": 1794716274875,
+      "keyFiles": []
+    },
+    "packages": {
+      "path": "packages",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1794716274895,
+      "keyFiles": []
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 0,
+      "lastAccessed": 1794716274906,
+      "keyFiles": []
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1794716274911,
+      "keyFiles": []
+    },
+    "tests": {
+      "path": "tests",
+      "purpose": "Test files",
+      "fileCount": 0,
+      "lastAccessed": 1794716274912,
+      "keyFiles": []
+    },
+    "tools": {
+      "path": "tools",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1794716274915,
+      "keyFiles": []
+    },
+    "tests/mocks": {
+      "path": "tests/mocks",
+      "purpose": "Mock data",
+      "fileCount": 0,
+      "lastAccessed": 1794716274925,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "packages/mcp-server/src/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794716283116,
+      "type": "file"
+    },
+    {
+      "path": "packages/arduino-manager/src/types.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794716314418,
+      "type": "file"
+    },
+    {
+      "path": "packages/platformio-manager/src/types.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794716318788,
+      "type": "file"
+    },
+    {
+      "path": "packages/esp-manager/src/types.ts",
+      "accessCount": 1.9987068738241809,
+      "lastAccessed": 1794716487010,
+      "type": "file"
+    },
+    {
+      "path": "packages/mcp-server/src/types.ts",
+      "accessCount": 1.9992213470733464,
+      "lastAccessed": 1794716428559,
+      "type": "file"
+    },
+    {
+      "path": "packages/mcp-server/src/mcp-server.ts",
+      "accessCount": 10.918064284825986,
+      "lastAccessed": 1794717725027,
+      "type": "file"
+    },
+    {
+      "path": "packages/hardware-detection/src/hardware-detector.ts",
+      "accessCount": 1.9999612278312475,
+      "lastAccessed": 1794716537516,
+      "type": "file"
+    },
+    {
+      "path": "packages/arduino-manager/src/arduino-manager.ts",
+      "accessCount": 1.9913798319069749,
+      "lastAccessed": 1794717623533,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli-installer/package.json",
+      "accessCount": 1,
+      "lastAccessed": 1794716607515,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli-installer/tsconfig.json",
+      "accessCount": 1,
+      "lastAccessed": 1794716615391,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli-installer/src/cli.ts",
+      "accessCount": 9.940133625106762,
+      "lastAccessed": 1794717884385,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli-installer/src/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794716657983,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1794716784389,
+      "type": "file"
+    },
+    {
+      "path": "packages/core-engine/src/__tests__/core-engine.test.ts",
+      "accessCount": 5.990537130765269,
+      "lastAccessed": 1794717266580,
+      "type": "file"
+    },
+    {
+      "path": "packages/config-manager/src/__tests__/config-manager.test.ts",
+      "accessCount": 4.992355532672988,
+      "lastAccessed": 1794717271605,
+      "type": "file"
+    },
+    {
+      "path": "packages/board-database/src/__tests__/board-database.test.ts",
+      "accessCount": 3.9942353701046396,
+      "lastAccessed": 1794717435965,
+      "type": "file"
+    },
+    {
+      "path": "packages/hardware-detection/src/__tests__/hardware-detection.test.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794716882756,
+      "type": "file"
+    },
+    {
+      "path": "packages/core-engine/src/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794716901185,
+      "type": "file"
+    },
+    {
+      "path": "packages/core-engine/src/core-engine.ts",
+      "accessCount": 3.994111989744331,
+      "lastAccessed": 1794717153682,
+      "type": "file"
+    },
+    {
+      "path": "packages/config-manager/src/config-manager.ts",
+      "accessCount": 3.999688862952645,
+      "lastAccessed": 1794716933445,
+      "type": "file"
+    },
+    {
+      "path": "packages/core-engine/src/module-registry.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717005726,
+      "type": "file"
+    },
+    {
+      "path": "packages/config-manager/src/types.ts",
+      "accessCount": 1.998862674466307,
+      "lastAccessed": 1794717205790,
+      "type": "file"
+    },
+    {
+      "path": "packages/config-manager/src/index.ts",
+      "accessCount": 1.9988594610930326,
+      "lastAccessed": 1794717211956,
+      "type": "file"
+    },
+    {
+      "path": "packages/board-database/src/data/boards.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717296198,
+      "type": "file"
+    },
+    {
+      "path": "packages/board-database/src/types.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717301656,
+      "type": "file"
+    },
+    {
+      "path": "packages/serial-comm/src/__tests__/serial-comm.test.ts",
+      "accessCount": 2.9997183292687266,
+      "lastAccessed": 1794717581630,
+      "type": "file"
+    },
+    {
+      "path": "packages/serial-comm/src/serial-manager.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717566561,
+      "type": "file"
+    },
+    {
+      "path": "packages/esp-manager/src/esp-manager.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717626697,
+      "type": "file"
+    },
+    {
+      "path": "packages/platformio-manager/src/platformio-manager.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717630145,
+      "type": "file"
+    },
+    {
+      "path": "packages/arduino-manager/src/__tests__/arduino-manager.test.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717646650,
+      "type": "file"
+    },
+    {
+      "path": "packages/esp-manager/src/__tests__/esp-manager.test.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717657782,
+      "type": "file"
+    },
+    {
+      "path": "packages/platformio-manager/src/__tests__/platformio-manager.test.ts",
+      "accessCount": 1,
+      "lastAccessed": 1794717666974,
+      "type": "file"
+    },
+    {
+      "path": "packages/mcp-server/src/__tests__/mcp-server.test.ts",
+      "accessCount": 1.9993471145457256,
+      "lastAccessed": 1794717755418,
+      "type": "file"
+    },
+    {
+      "path": "packages/cli-installer/src/__tests__/cli-installer.test.ts",
+      "accessCount": 1.9988804724142004,
+      "lastAccessed": 1794717826724,
+      "type": "file"
+    },
+    {
+      "path": "eslint.config.js",
+      "accessCount": 2.998406418939978,
+      "lastAccessed": 1794718114910,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
